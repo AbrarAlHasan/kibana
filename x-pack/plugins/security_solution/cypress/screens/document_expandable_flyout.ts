@@ -16,7 +16,6 @@ import {
   HOST_DETAILS_TEST_ID,
 } from '../../public/flyout/left/components/test_ids';
 import {
-  HISTORY_TAB_CONTENT_TEST_ID,
   INVESTIGATION_TAB_CONTENT_TEST_ID,
   INSIGHTS_TAB_BUTTON_GROUP_TEST_ID,
   INSIGHTS_TAB_ENTITIES_BUTTON_TEST_ID,
@@ -28,7 +27,6 @@ import {
   VISUALIZE_TAB_SESSION_VIEW_BUTTON_TEST_ID,
 } from '../../public/flyout/left/tabs/test_ids';
 import {
-  HISTORY_TAB_TEST_ID,
   INSIGHTS_TAB_TEST_ID,
   INVESTIGATION_TAB_TEST_ID,
   VISUALIZE_TAB_TEST_ID,
@@ -132,12 +130,8 @@ export const DOCUMENT_DETAILS_FLYOUT_INSIGHTS_TAB =
   getDataTestSubjectSelector(INSIGHTS_TAB_TEST_ID);
 export const DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB =
   getDataTestSubjectSelector(INVESTIGATION_TAB_TEST_ID);
-export const DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB = getDataTestSubjectSelector(HISTORY_TAB_TEST_ID);
 export const DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB_CONTENT = getDataTestSubjectSelector(
   INVESTIGATION_TAB_CONTENT_TEST_ID
-);
-export const DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB_CONTENT = getDataTestSubjectSelector(
-  HISTORY_TAB_CONTENT_TEST_ID
 );
 
 /* Left Section - Visualize tab */

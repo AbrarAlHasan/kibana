@@ -6,7 +6,6 @@
  */
 
 import {
-  DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB,
   DOCUMENT_DETAILS_FLYOUT_INSIGHTS_TAB,
   DOCUMENT_DETAILS_FLYOUT_INSIGHTS_TAB_BUTTON_GROUP,
   DOCUMENT_DETAILS_FLYOUT_INSIGHTS_TAB_ENTITIES_BUTTON,
@@ -21,7 +20,6 @@ import {
   DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB,
   DOCUMENT_DETAILS_FLYOUT_VISUALIZE_TAB,
   DOCUMENT_DETAILS_FLYOUT_VISUALIZE_TAB_BUTTON_GROUP,
-  DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB_CONTENT,
   DOCUMENT_DETAILS_FLYOUT_VISUALIZE_TAB_SESSION_VIEW_BUTTON,
   DOCUMENT_DETAILS_FLYOUT_VISUALIZE_TAB_GRAPH_ANALYZER_BUTTON,
   DOCUMENT_DETAILS_FLYOUT_VISUALIZE_TAB_SESSION_VIEW_CONTENT,
@@ -31,7 +29,6 @@ import {
   expandDocumentDetailsExpandableFlyoutLeftSection,
   expandFirstAlertExpandableFlyout,
   openGraphAnalyzer,
-  openHistoryTab,
   openInsightsTab,
   openInvestigationTab,
   openSessionView,
@@ -75,7 +72,6 @@ describe(
       cy.get(DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB)
         .should('be.visible')
         .and('have.text', 'Investigation');
-      cy.get(DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB).should('be.visible').and('have.text', 'History');
     });
 
     it.skip('should display tab content when switching tabs', () => {
@@ -87,9 +83,6 @@ describe(
 
       openInvestigationTab();
       cy.get(DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB_CONTENT).should('be.visible');
-
-      openHistoryTab();
-      cy.get(DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB_CONTENT).should('be.visible');
     });
 
     describe.skip('visualize tab', () => {

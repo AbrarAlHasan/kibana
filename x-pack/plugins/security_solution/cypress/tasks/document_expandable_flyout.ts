@@ -13,7 +13,6 @@ import {
   DOCUMENT_DETAILS_FLYOUT_EXPAND_DETAILS_BUTTON,
   DOCUMENT_DETAILS_FLYOUT_FOOTER,
   DOCUMENT_DETAILS_FLYOUT_FOOTER_TAKE_ACTION_BUTTON,
-  DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB,
   DOCUMENT_DETAILS_FLYOUT_INSIGHTS_TAB,
   DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB,
   DOCUMENT_DETAILS_FLYOUT_JSON_TAB,
@@ -245,12 +244,6 @@ export const openCorrelations = () =>
  */
 export const openInvestigationTab = () =>
   cy.get(DOCUMENT_DETAILS_FLYOUT_INVESTIGATION_TAB).scrollIntoView().should('be.visible').click();
-
-/**
- * Open the History tab in the document details expandable flyout left section
- */
-export const openHistoryTab = () =>
-  cy.get(DOCUMENT_DETAILS_FLYOUT_HISTORY_TAB).scrollIntoView().click();
 
 /**
  * Filter table under the Table tab in the alert details expandable flyout right section
